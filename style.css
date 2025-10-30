@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +38,7 @@
 
 /* box 2 */
 
-.add-first {
+/* .add-first {
     color: #cccccc;
     font-size: 0.85rem;
     margin-left: 15px;
@@ -55,7 +55,7 @@
 }
 
 /* box 3 */
-
+/* 
 .nav-search {
     display: flex;
     justify-content: space-evenly;
@@ -100,7 +100,7 @@
 
 /* box4 */
 
-    span {
+    /* span {
         font-size: 0.7rem;
 
     }
@@ -108,23 +108,23 @@
     .nav-second {
         font-size: 0.87rem;
         font-weight: 700;
-    }
+    } */
 
 
     /* box 6 */
 
-    .nav-cart i {
+    /* .nav-cart i {
             font-size: 30px;
     }
 
     .nav-cart {
         font-size: 0.85rem;
         font-weight: 700;
-    }
+    } */
 
 
     /* pannel */
-
+/* 
     .pannel{
         height: 40px;
         background-color: #232f3e;
@@ -149,10 +149,10 @@
     .pannel-deals {
         font-weight: 700;
         font-size: 0.9rem;
-    }
+    }  */
 
     /* hero-section */
-
+/* 
     .hero-section {
         background-image: url(images/hero_image.jpg);
         height: 350px;
@@ -180,14 +180,14 @@
     }
 
     /* shop section */
-    .shop-section {
+    /* .shop-section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         background-color: #e2e7e6;
-    }
+    } */
 
-    .box {
+    /* .box {
          height: 400px;
          width: 23%;
          background-color: white;
@@ -210,12 +210,12 @@
 
     .box-content p {
         color: #007185;
-    }
+    }  */
 
 
 
     /* footer */
-
+/* 
 
     .foot-pannel1 {
         background-color: #37475a;
@@ -271,9 +271,9 @@
         color: white;
         height: 80px;
       
-    }
+    } */
 
-    .pages a {
+    /* .pages a {
         font-size: 0.8rem;
         color: white;
         text-decoration: none;
@@ -291,4 +291,397 @@
         font-size: 0.8rem;
         text-align: center;
         padding-top: 5px;
+    }  */
+
+
+
+    /* Responsive Design */
+
+    /* 🌐 Step 1: Global Reset & Basic Setup */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* 🧭 Step 2: Navbar Section */
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    background-image: url(images/amazon_logo.png);
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+}
+
+.navlogo {
+    height: 50px;
+    width: 100px;
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+/* 📍 Box 2 - Address Section */
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-second {
+    font-size: 1rem;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.add-icon {
+    display: flex;
+}
+
+/* 🔍 Box 3 - Search Section */
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #0f1111;
+    background-color: #febd69;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.nav-search:hover {
+    border: 2px solid orange;
+}
+
+/* 👤 Box 4 - Sign In / Account Section */
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+
+/* 🛒 Box 6 - Cart Section */
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* 🧾 Panel Section */
+.pannel {
+    height: 40px;
+    background-color: #232f3e;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pannel-ops p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.pannel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.pannel-deals {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* 🏞️ Hero Section */
+.hero-section {
+    background-image: url(images/hero_image.jpg);
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 98%;
+    margin-bottom: 25px;
+}
+
+.hero-section a {
+    color: #007185;
+}
+
+/* 🛍️ Shop Section */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box {
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.box-img {
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content {
+    margin-left: 0.84rem;
+    margin-right: 0.84rem;
+}
+
+.box-content p {
+    color: #007185;
+}
+
+/* ⚙️ Footer Section */
+.foot-pannel1 {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-pannel2 {
+    background-color: #232f3e;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot-pannel2 ul li {
+    list-style: none;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-pannel2 ul li p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.foot-pannel2 ul {
+    margin-top: 20px;
+}
+
+.foot-pannel3 {
+    background-color: #232f3e;
+    border-top: 0.5px solid white;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+}
+
+.foot-pannel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+}
+
+.pages a {
+    font-size: 0.8rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* ✅ Step 3: Responsive Design (Add at the END) */
+
+/* Tablet and Mobile (width ≤ 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
     }
+
+    .nav-search {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .search-select {
+        width: 60px;
+    }
+
+    .hero-section {
+        height: 200px;
+        background-position: center;
+    }
+
+    .hero-msg {
+        width: 90%;
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .box-img {
+        height: 250px;
+    }
+
+    .pannel {
+        flex-wrap: wrap;
+        text-align: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .pannel-ops {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .foot-pannel2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .foot-pannel2 ul {
+        margin-top: 10px;
+    }
+
+    .foot-pannel3 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .pages {
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+
+    .pages a {
+        font-size: 0.75rem;
+        margin: 5px;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+        padding-bottom: 10px;
+    }
+}
+
+/* Small Phones (width ≤ 480px) */
+@media (max-width: 480px) {
+    .nav-search {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .search-select, 
+    .search-input, 
+    .search-icon {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .search-icon {
+        height: 40px;
+    }
+
+    .box-img {
+        height: 200px;
+    }
+
+    .hero-msg {
+        font-size: 0.7rem;
+    }
+}
