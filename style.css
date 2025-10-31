@@ -658,30 +658,95 @@ span {
         padding-bottom: 10px;
     }
 }
+/* ✅ Whole Mobile Navbar */
+.nav-mobile {
+    background-color: #0f1111;
+    color: white;
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
 
-/* Small Phones (width ≤ 480px) */
-@media (max-width: 480px) {
-    .nav-search {
-        flex-direction: column;
-        height: auto;
-    }
+/* ✅ Row 1 : Logo + Location */
+.nav-row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .search-select, 
-    .search-input, 
-    .search-icon {
-        width: 100%;
-        border-radius: 0;
-    }
+.mobile-logo {
+    width: 90px;
+}
 
-    .search-icon {
-        height: 40px;
-    }
+.delivery {
+    text-align: right;
+}
 
-    .box-img {
-        height: 200px;
-    }
+.line1 {
+    font-size: 0.7rem;
+    color: #ccc;
+}
 
-    .hero-msg {
-        font-size: 0.7rem;
-    }
+.line2 {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* ✅ Row 2 : Searchbar */
+.nav-row2 {
+    margin: 10px 0;
+}
+
+.search-box {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-box select {
+    width: 60px;
+    border: none;
+    background: #e6e6e6;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.search-box i {
+    width: 45px;
+    background: #febd69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+/* ✅ Row 3: Account / Orders / Cart */
+.nav-row3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.nav-item {
+    width: 33%;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.nav-item span {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.cart i {
+    font-size: 1.3rem;
 }
